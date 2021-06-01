@@ -1,0 +1,27 @@
+name: Deploy to Production
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v2
+      - name: Build website
+        run : |
+          yarn
+          yarn run webpack --mode=production
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: akarys.me
+          path: dist
+      - name: Deploy to production
+        run: ./upload.sh
+        env:
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+      - name: Success!
+        run: echo "🚀 The new website is now live! It can take up to a minute to propagate."

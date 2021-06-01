@@ -20,7 +20,6 @@ EOF
 
 code=$(curl -X POST --silent --output /dev/stderr --write-out "%{http_code}" -H "Authorization: ${DEPLOY_TOKEN}" $files https://akarys.me/upload)
 if [ $code -ne 204 ]; then
-  echo
   echo "Server returned code $code"
   exit 1
 fi
