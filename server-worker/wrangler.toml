@@ -1,0 +1,15 @@
+name = "server-worker"
+type = "webpack"
+
+account_id = "870d596bc7edb180166ec010bbc13185"
+workers_dev = true
+
+webpack_config = "webpack.config.js"
+
+kv_namespaces = [
+  {binding = "STORAGE", id = "b7e0d845a9d24855a92cba95fecf175f", preview_id = "b7e0d845a9d24855a92cba95fecf175f"}
+]
+
+[env.production]
+route = "akarys.me/*"
+zone_id = "6beba78812aa04fdf7e859ef092aa3bd"
