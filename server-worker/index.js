@@ -59,6 +59,6 @@ async function handleRequest(request) {
   }
 
   return new Response(data, {
-    headers: { 'content-type': mimetypes.lookup(path) | "text/plain" },
+    headers: { 'content-type': mimetypes.lookup(path) || "text/plain" },
   })
 }
