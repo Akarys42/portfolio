@@ -20,7 +20,8 @@ module.exports = {
     }),
     new CopyPlugin({
       patterns: [
-        { from: "*.txt", context: "src" }
+        { from: "*.txt", context: "src" },
+        { from: "*", context: "src/keys" }
       ],
     }),
   ],
