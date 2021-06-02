@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/akarys
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://akarys.me
+  * I am akarys (https://keybase.io/akarys) on keybase.
+  * I have a public key ASDrN9MxIEC8b9pPOJE8fSAoNPHQLFzuowLbl0ymTcy9fgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01205e53e1fe79eb4f14dd06a5b610bd7ad1c16e93eafc6481cd0e54f1e8b410b4380a",
+      "host": "keybase.io",
+      "kid": "0120eb37d3312040bc6fda4f38913c7d202834f1d02c5ceea302db974ca64dccbd7e0a",
+      "uid": "222dc0979586065041f2ec211eea6719",
+      "username": "akarys"
+    },
+    "merkle_root": {
+      "ctime": 1622617515,
+      "hash": "61da4c4d7cc6f2a4c6b3b656002bd893550021df38de86c8ad72441b7f88d44bcd5f9415c6d4e21b38f7d0a727afd867700c2bd50d57d7ac9921db051b897a55",
+      "hash_meta": "9202661ccdc9966e27c3504b5dd61c499991ee7da1bc216a74577e4104c709bf",
+      "seqno": 20094720
+    },
+    "service": {
+      "entropy": "O0Hx/tF0YwwtggDjpdImeR23",
+      "hostname": "akarys.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.6.0"
+  },
+  "ctime": 1622617567,
+  "expire_in": 504576000,
+  "prev": "47872fa5c54ff4e60692881c1297d3a2279a4163f1b69dc200d28fe2db0651fc",
+  "seqno": 42,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg6zfTMSBAvG/aTziRPH0gKDTx0Cxc7qMC25dMpk3MvX4Kp3BheWxvYWTESpcCKsQgR4cvpcVP9OYGkogcEpfToieaQWPxtp3CANKP4tsGUfzEIGFBnQYD+NSQMeM+q/Fyp2hJeUslajGkYvjDXuE2qgbsAgHCo3NpZ8RASgBx+ATjhzNSzyw7oaLfrPTfVNMJSgF8witiDn7o9wUCPgShP8xcNZD5eoj3nbzGsGOiP67tA2UzAAt7LVEZB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJX+Jw2fdyAQCBaOhYCocZWzxbaZhNLeEKaFM9kBgnu2o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/akarys
+
+==================================================================
