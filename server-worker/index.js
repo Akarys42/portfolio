@@ -25,7 +25,7 @@ async function uploadAsset(request) {
 
   let existingKeys = (await listKV())["keys"].map(elem => elem["name"])
 
-  let keysToDelete = existingKeys.filter(elem => !(keys.includes(elem)))
+  let keysToDelete = existingKeys.filter(elem => !(keys.includes(elem) || elem.startsWith("/data/")))
   for (const elem of keysToDelete) {
     await deleteKV(elem)
   }
@@ -41,6 +41,17 @@ async function handleRequest(request) {
   let path = new URL(request.url).pathname
   if (request.method === "POST" && path === "/upload") {
     return uploadAsset(request)
+  }
+
+  // Data storage
+  if ((request.method === "POST" || request.method === "DELETE") && path.startsWith("/data/")) {
+    if (request.headers.get("Authorization") !== DATA_TOKEN) {
+      return new Response("Forbidden", {status: 403})
+    }
+
+    if (request.method === "POST") { await setKV(path, request.body) }
+    if (request.method === "DELETE") { await deleteKV(path) }
+    return new Response(null, {status: 204})
   }
 
   if (request.method !== "GET") {

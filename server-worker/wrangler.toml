@@ -7,8 +7,11 @@ workers_dev = true
 webpack_config = "webpack.config.js"
 
 kv_namespaces = [
-  {binding = "STORAGE", id = "b7e0d845a9d24855a92cba95fecf175f", preview_id = "b7e0d845a9d24855a92cba95fecf175f"}
+  {binding = "STORAGE", id = "b7e0d845a9d24855a92cba95fecf175f", preview_id = "c6ed4b13076c43ceb35587990f39c756"}
 ]
+
+[env.preview]
+vars = { DEPLOY_TOKEN = "1234", DATA_TOKEN = "5678" }
 
 [env.production]
 route = "akarys.me/*"
