@@ -4,7 +4,7 @@
   "description": "A Tailwind personal retro website!",
   "main": "index.js",
   "repository": "https://github.com/Akarys42/portfolio",
-  "author": "Matteo Bertucci <matteobertucci2004@gmail.com>",
+  "author": "Amber Bertucci <amber@akarys.me>",
   "license": "MIT",
   "private": false,
   "devDependencies": {
